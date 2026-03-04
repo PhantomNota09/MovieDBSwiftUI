@@ -76,6 +76,6 @@ struct MovieDetailView: View {
     }
     
     func openYouTube() {
-        UIApplication.shared.open(URL(string: "https://www.youtube.com")!)
+        UIApplication.shared.open(URL(string: "https://www.youtube.com")!) //if app exists then we can you youtube://
     }
 }
