@@ -12,6 +12,13 @@ struct MovieDBSwiftUIApp: App {
     var body: some Scene {
         WindowGroup {
             ContentView()
+                .onOpenURL { url in
+                    handleDeepLink(url)
+                }
         }
+    }
+    
+    func handleDeepLink(_ url: URL) {
+        print("Handling deep link to: \(url)")
     }
 }
